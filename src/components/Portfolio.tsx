@@ -67,8 +67,8 @@ function Portfolio() {
     if (downloadButton) {
       downloadButton.addEventListener("click", function () {
         const link = document.createElement("a");
-        link.href = "./Deep's Resume.pdf";
-        link.download = "Deep's Resume.pdf";
+        link.href = "./Deep's resume.pdf";
+        link.download = "Deep's resume.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
