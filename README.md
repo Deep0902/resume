@@ -1,4 +1,4 @@
-#Check my [Resume](https://deep0902.github.io/resume/)
+# Check my [Resume](https://deep0902.github.io/resume/)
 
 # React + TypeScript + Vite
 
