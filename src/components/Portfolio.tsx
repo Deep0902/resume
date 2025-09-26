@@ -86,7 +86,7 @@ function Portfolio() {
       observer.disconnect();
     };
   }, []);
- 
+
   // Helper for opening links in new tab
   function openInNewTab(url: string) {
     window.open(url, "_blank");
@@ -264,45 +264,31 @@ function Portfolio() {
                 technologies
               </span>
               <span className="experience-duration">
-                {" "}
-                October 2022 - Present{" "}
+                October 2022 - Present
               </span>
               <div className="experience-details poppins-regular">
                 <ul>
                   <li>
-                    Increased the efficiency by 20% in UI development for an
-                    in-house Quality Management system (IEMQS) as a result of my
-                    fast-paced delivery and technical expertise in Angular
-                    11-13, enabling the team to ship responsive screens more
-                    rapidly using reactive forms and RESTful APIs.
+                    Improved UI efficiency (~20%) by architecting scalable SPAs
+                    with Angular & React, using lazy loading, feature modules,
+                    and Reactive Forms.
                   </li>
                   <li>
-                    Boosted development speed by 20-25% for both front-end UI
-                    elements, logic/API integrations by pioneering GitHub
-                    Copilot and Builder.io in Supplier XChange and Track & Trace
-                    for L&T Valves. Streamlined Figma-to-code workflows and
-                    optimized modular Angular architecture for reusability and
-                    maintainability.
+                    Accelerated API integration (~25%) via RxJS-based shared
+                    services, enabling faster, reliable REST-driven development.
                   </li>
                   <li>
-                    Designed end-to-end UX/UI for a 4-day Skoda hackathon
-                    prototype, enabling seamless subscription tracking. Engaged
-                    with clients to understand business needs and delivered
-                    high-fidelity designs using Figma and Adobe XD.
+                    Boosted test coverage (~30%) with Angular Testing Library
+                    and Sonar Cube, ensuring safer CI/CD deployments.
                   </li>
                   <li>
-                    Built and maintained scalable components leveraging state
-                    management, performance optimization techniques and CI/CD
-                    practices to deliver high-quality, responsive user
-                    experiences while collaborating with cross-functional teams
-                    to align on design and functionality requirements.
+                    Built reusable components with Angular Standalone Components
+                    and SCSS, aligning with architectures like React.
                   </li>
                   <li>
-                    Built and maintained scalable components leveraging state
-                    management, performance optimization techniques and CI/CD
-                    practices to deliver high-quality, responsive user
-                    experiences while collaborating with cross-functional teams
-                    to align on design and functionality requirements.
+                    Delivered component-driven WCAG-compliant UIs by translating
+                    Figma/Adobe XD designs into responsive, accessible
+                    HTML5/CSS3 experiences.
                   </li>
                 </ul>
               </div>
@@ -530,20 +516,81 @@ function Portfolio() {
         <div className="projects-section">
           <div className="projects-card">
             <div className="project-heading">
+              <img src="./icons/url-short.svg" alt="" />
+              <span className="poppins-bold">ChopURL</span>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  Full-stack MERN project that generates short URLs while
+                  emphasizing performance and code quality 🚀
+                </li>
+                <li>
+                  Improved API response times using compression, AES encryption,
+                  and JWT token authentication, used rate limiter to prevent
+                  abuse, improving API response times by 40%.
+                </li>
+                <li>
+                  Implemented PWA-enabled UI, lazy loading, reverse proxy for
+                  secure API calls and cookie-based authentication, increasing
+                  performance by 30%.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <button
+                className="poppins-medium"
+                style={{ color: "white", backgroundColor: "#019863" }}
+                onClick={() =>
+                  openInNewTab("https://url-shortner-amber-pi.vercel.app/")
+                }
+              >
+                Check it out!
+              </button>
+              <button
+                className="poppins-medium"
+                style={{ color: "white", backgroundColor: "#3d3d3d" }}
+                onClick={() =>
+                  openInNewTab("https://github.com/Deep0902/url-shortner")
+                }
+              >
+                Code
+              </button>
+              <button
+                className="poppins-medium"
+                style={{ color: "white", backgroundColor: "#0077b5" }}
+                onClick={() =>
+                  openInNewTab(
+                    "https://www.linkedin.com/posts/deeprakesh_mern-webdevelopment-fullstack-activity-7366074727263629312-6ZNq?utm_source=share&utm_medium=member_desktop&rcm=ACoAACoFEikBgTRfV20JkR8nkT1C7aC7SEzR7rI"
+                  )
+                }
+              >
+                More Info
+              </button>
+            </div>
+          </div>
+          <div className="projects-card">
+            <div className="project-heading">
               <img src="./icons/personal-expense-tracker.svg" alt="" />
               <span className="poppins-bold">Personal Expense Tracker</span>
             </div>
             <div>
               <ul>
                 <li>
-                  A Full-Stack Application designed to effortlessly track all
-                  your expenses and spending. 💸
+                  Full-stack app for tracking expenses across devices, built
+                  with React, Flask, and MongoDB. 💸
                 </li>
                 <li>
-                  This has a user-friendly and responsive design making seamless
-                  experience on both phone & laptop.🤳💻
+                  Implemented REST API with authentication and CRUD operations
+                  in Flask, created reusable React components for real time
+                  dashboard, and optimized responsiveness for desktop and
+                  mobile.🤳💻
                 </li>
-                <li>Used React JS, MongoDB, Python Flask and Figma.🛠️</li>
+                <li>
+                  Streamlined the development lifecycle with feature-based Git
+                  branches and used ClickUp and Miro for agile planning, user
+                  flow mapping and iterative prototyping.
+                </li>
               </ul>
             </div>
             <div>
