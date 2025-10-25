@@ -694,7 +694,7 @@ function Portfolio() {
               </button>
             </div>
           </div>
-          <div className="projects-card">
+          {/* <div className="projects-card">
             <div className="project-heading">
               <img src="./icons/ball.svg" alt="" />
               <span className="poppins-bold">Ball-Der-Dash</span>
@@ -724,7 +724,7 @@ function Portfolio() {
                 Code
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <section id="education" className="sections">
