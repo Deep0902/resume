@@ -38,7 +38,7 @@ function Portfolio() {
       entries.forEach((entry) => {
         const sectionId = entry.target.id;
         const iconContainer = document.querySelector(
-          `.icon-container[data-section="${sectionId}"]`
+          `.icon-container[data-section="${sectionId}"]`,
         );
         if (iconContainer) {
           if (entry.isIntersecting) {
@@ -67,8 +67,8 @@ function Portfolio() {
     if (downloadButton) {
       downloadButton.addEventListener("click", function () {
         const link = document.createElement("a");
-        link.href = "./Deep's resume.pdf";
-        link.download = "Deep's resume.pdf";
+        link.href = "./Deep's Resume.pdf";
+        link.download = "Deep's Resume.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -126,7 +126,7 @@ function Portfolio() {
         </div>
       </nav>
 
-      <section id="Home" className="sections">
+      <section id="Home" className="sections mobile">
         <img
           className="animate elements"
           style={{ "--delay": "0.8s" } as React.CSSProperties}
@@ -156,9 +156,10 @@ function Portfolio() {
             className="animate"
             style={{ "--delay": "1.5s" } as React.CSSProperties}
           >
-            Frontend Developer with a keen eye for visual design and user
-            experience. Expertise in responsive layouts and grid systems,
-            delivering seamless and engaging web pages
+            Senior Frontend Engineer with 3+ years of experience in crafting
+            seamless digital experiences via thoughtful design and scalable
+            architecture, driven by a passion for building products that are
+            elegant and effective.
           </span>
           <br />
           <button
@@ -255,7 +256,7 @@ function Portfolio() {
             </div>
             <div className="experience-content">
               <span className="experience-heading">
-                LTIMindtree: Senior Engineer - Frontend Development
+                LTIMindtree: Senior Frontend Engineer
               </span>
 
               <span className="experience-about poppins-regular-italic">
@@ -269,26 +270,30 @@ function Portfolio() {
               <div className="experience-details poppins-regular">
                 <ul>
                   <li>
-                    Improved UI efficiency (~20%) by architecting scalable SPAs
-                    with Angular & React, using lazy loading, feature modules,
-                    and Reactive Forms.
+                    Built responsive applications using Reactive Forms, modular
+                    architecture, and reusable components, improving UI
+                    efficiency by ~20%.
                   </li>
                   <li>
-                    Accelerated API integration (~25%) via RxJS-based shared
-                    services, enabling faster, reliable REST-driven development.
+                    Streamlined feature delivery and API integration by
+                    implementing shared Angular component libraries and RxJS
+                    workflows, accelerating development by ~25%
                   </li>
                   <li>
-                    Boosted test coverage (~30%) with Angular Testing Library
-                    and Sonar Cube, ensuring safer CI/CD deployments.
+                    Increased application reliability by enforcing unit testing
+                    with Testing Library and SonarQube quality standards,
+                    improving test coverage by ~30%.
                   </li>
                   <li>
-                    Built reusable components with Angular Standalone Components
-                    and SCSS, aligning with architectures like React.
+                    Developed secure, scalable frontend features using React
+                    with JWT authentication, AES-encrypted APIs, rate limiting,
+                    and cookie-based authorization.
                   </li>
                   <li>
-                    Delivered component-driven WCAG-compliant UIs by translating
-                    Figma/Adobe XD designs into responsive, accessible
-                    HTML5/CSS3 experiences.
+                    Enhanced frontend performance through lazy loading, PWA
+                    capabilities, reverse proxy configuration, and
+                    performance-focused UI architecture across React and Angular
+                    applications.
                   </li>
                 </ul>
               </div>
@@ -378,7 +383,7 @@ function Portfolio() {
             className="certification"
             onClick={() =>
               openInNewTab(
-                "https://www.credly.com/badges/77232754-7799-49ca-8d3b-7a8bbe835e1f"
+                "https://www.credly.com/badges/77232754-7799-49ca-8d3b-7a8bbe835e1f",
               )
             }
           >
@@ -391,7 +396,7 @@ function Portfolio() {
             className="certification"
             onClick={() =>
               openInNewTab(
-                "https://www.coursera.org/account/accomplishments/certificate/M3WDJSOHN22P"
+                "https://www.coursera.org/account/accomplishments/certificate/M3WDJSOHN22P",
               )
             }
           >
@@ -402,7 +407,7 @@ function Portfolio() {
             className="certification"
             onClick={() =>
               openInNewTab(
-                "https://www.coursera.org/account/accomplishments/certificate/BJYD35V2S750"
+                "https://www.coursera.org/account/accomplishments/certificate/BJYD35V2S750",
               )
             }
           >
@@ -416,7 +421,7 @@ function Portfolio() {
             className="certification"
             onClick={() =>
               openInNewTab(
-                "https://www.udemy.com/certificate/UC-851239aa-befb-4308-9d73-70c8986e2776/"
+                "https://www.udemy.com/certificate/UC-851239aa-befb-4308-9d73-70c8986e2776/",
               )
             }
           >
@@ -429,7 +434,7 @@ function Portfolio() {
             className="certification"
             onClick={() =>
               openInNewTab(
-                "https://www.coursera.org/account/accomplishments/verify/VSEQ2FQ2PHHH"
+                "https://www.coursera.org/account/accomplishments/verify/VSEQ2FQ2PHHH",
               )
             }
           >
@@ -440,7 +445,7 @@ function Portfolio() {
             className="certification"
             onClick={() =>
               openInNewTab(
-                "https://www.coursera.org/account/accomplishments/certificate/VHHEYC6JDJEJ"
+                "https://www.coursera.org/account/accomplishments/certificate/VHHEYC6JDJEJ",
               )
             }
           >
@@ -462,7 +467,7 @@ function Portfolio() {
             className="certification"
             onClick={() =>
               openInNewTab(
-                "https://www.coursera.org/account/accomplishments/certificate/VR7VOV5UQFPM"
+                "https://www.coursera.org/account/accomplishments/certificate/VR7VOV5UQFPM",
               )
             }
           >
@@ -475,7 +480,7 @@ function Portfolio() {
             className="certification"
             onClick={() =>
               openInNewTab(
-                "https://www.credly.com/badges/1c591a95-a49f-468f-8237-c08c05a5cb93/linked_in_profile"
+                "https://www.credly.com/badges/1c591a95-a49f-468f-8237-c08c05a5cb93/linked_in_profile",
               )
             }
           >
@@ -487,7 +492,7 @@ function Portfolio() {
             className="certification"
             onClick={() =>
               openInNewTab(
-                "https://www.coursera.org/account/accomplishments/certificate/9NYLU6U78QEP"
+                "https://www.coursera.org/account/accomplishments/certificate/9NYLU6U78QEP",
               )
             }
           >
@@ -500,7 +505,7 @@ function Portfolio() {
             className="certification"
             onClick={() =>
               openInNewTab(
-                "https://www.coursera.org/account/accomplishments/verify/F4KIPAK7MDMF"
+                "https://www.coursera.org/account/accomplishments/verify/F4KIPAK7MDMF",
               )
             }
           >
@@ -522,18 +527,16 @@ function Portfolio() {
             <div>
               <ul>
                 <li>
-                  Full-stack MERN project that generates short URLs while
-                  emphasizing performance and code quality 🚀
+                  Features AES-encrypted APIs, JWT authentication, and rate
+                  limiting for secure user access
                 </li>
                 <li>
-                  Improved API response times using compression, AES encryption,
-                  and JWT token authentication, used rate limiter to prevent
-                  abuse, improving API response times by 40%.
+                  Implements PWA, lazy loading, and reverse proxy for optimized
+                  UX and secure cookie-based auth.
                 </li>
                 <li>
-                  Implemented PWA-enabled UI, lazy loading, reverse proxy for
-                  secure API calls and cookie-based authentication, increasing
-                  performance by 30%.
+                  Integrates robust CI/CD and branching strategy to maximize
+                  uptime and deployment frequency
                 </li>
               </ul>
             </div>
@@ -561,7 +564,7 @@ function Portfolio() {
                 style={{ color: "white", backgroundColor: "#0077b5" }}
                 onClick={() =>
                   openInNewTab(
-                    "https://www.linkedin.com/posts/deeprakesh_mern-webdevelopment-fullstack-activity-7366074727263629312-6ZNq?utm_source=share&utm_medium=member_desktop&rcm=ACoAACoFEikBgTRfV20JkR8nkT1C7aC7SEzR7rI"
+                    "https://www.linkedin.com/posts/deeprakesh_mern-webdevelopment-fullstack-activity-7366074727263629312-6ZNq?utm_source=share&utm_medium=member_desktop&rcm=ACoAACoFEikBgTRfV20JkR8nkT1C7aC7SEzR7rI",
                   )
                 }
               >
@@ -577,19 +580,16 @@ function Portfolio() {
             <div>
               <ul>
                 <li>
-                  Full-stack app for tracking expenses across devices, built
-                  with React, Flask, and MongoDB. 💸
+                  Cross-device expense tracking app built with React, Flask, and
+                  MongoDB.
                 </li>
                 <li>
-                  Implemented REST API with authentication and CRUD operations
-                  in Flask, created reusable React components for real time
-                  dashboard, and optimized responsiveness for desktop and
-                  mobile.🤳💻
+                  Employs reusable component architecture ensuring mobile-first
+                  responsiveness and clean codebase
                 </li>
                 <li>
-                  Streamlined the development lifecycle with feature-based Git
-                  branches and used ClickUp and Miro for agile planning, user
-                  flow mapping and iterative prototyping.
+                  Follows Agile cycles with Git version control and Miro
+                  prototyping for end-to-end user journey design
                 </li>
               </ul>
             </div>
@@ -599,7 +599,7 @@ function Portfolio() {
                 style={{ color: "white", backgroundColor: "#019863" }}
                 onClick={() =>
                   openInNewTab(
-                    "https://deep0902.github.io/personal-expense-tracker-demo/"
+                    "https://deep0902.github.io/personal-expense-tracker-demo/",
                   )
                 }
               >
@@ -610,7 +610,7 @@ function Portfolio() {
                 style={{ color: "white", backgroundColor: "#3d3d3d" }}
                 onClick={() =>
                   openInNewTab(
-                    "https://github.com/Deep0902/personal-expense-tracker"
+                    "https://github.com/Deep0902/personal-expense-tracker",
                   )
                 }
               >
@@ -621,7 +621,7 @@ function Portfolio() {
                 style={{ color: "white", backgroundColor: "#0077b5" }}
                 onClick={() =>
                   openInNewTab(
-                    "https://www.linkedin.com/posts/deeprakesh_fullstackdevelopment-pythonflask-mongodb-activity-7233375508577591297-nkqo?utm_source=share&utm_medium=member_desktop"
+                    "https://www.linkedin.com/posts/deeprakesh_fullstackdevelopment-pythonflask-mongodb-activity-7233375508577591297-nkqo?utm_source=share&utm_medium=member_desktop",
                   )
                 }
               >
@@ -647,13 +647,13 @@ function Portfolio() {
                 <li>Used Python for development.🛠️</li>
               </ul>
             </div>
-            <div>
+            <div style={{ marginTop: "auto" }}>
               <button
                 className="poppins-medium"
                 style={{ color: "white", backgroundColor: "#3d3d3d" }}
                 onClick={() =>
                   openInNewTab(
-                    "https://github.com/Deep0902/personal-expense-tracker"
+                    "https://github.com/Deep0902/personal-expense-tracker",
                   )
                 }
               >
@@ -686,7 +686,7 @@ function Portfolio() {
                 style={{ color: "white", backgroundColor: "#3d3d3d" }}
                 onClick={() =>
                   openInNewTab(
-                    "https://github.com/Likith2000/MeAN-Android-Application"
+                    "https://github.com/Likith2000/MeAN-Android-Application",
                   )
                 }
               >

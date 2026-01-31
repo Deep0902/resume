@@ -14,11 +14,12 @@ function App() {
   requestAnimationFrame(raf);
 }, []);
   return (
-    <Router>
-      <Routes>
-        <Route index path="/resume" element={<Portfolio />} />
-      </Routes>
-    </Router>
+    // <Router>
+    //   <Routes>
+    //     <Route index path="/" element={<Portfolio />} />
+    //   </Routes>
+    // </Router>
+    <Portfolio />
   );
 }
 

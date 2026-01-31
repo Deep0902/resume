@@ -527,12 +527,23 @@ span {
   height: 2px; /* Adjust the thickness of the underline */
   background-color: #000000; /* Change this to your desired underline color */
 }
+.mobile {
+  flex-direction: row;
+}
 
 /* Phone Screen CSS */
 @media (max-width: 760px) {
   .footer .textBlock {
     flex-direction: column;
   }
+  .sidebar > .icons {
+    display: none;
+  }
+  #Home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
   .textSection {
     width: 100%;
     margin-bottom: 3em;
@@ -567,8 +578,20 @@ span {
     font-size: 14px;
   }
   #Home .intro {
+    gap: 4px;
     padding: 0;
+    width: 100%;
   }
+  .elements{
+    display: none;
+  }
+  #Home .profile-img {
+    /* width: 73vh; */
+    height: 30em;
+    object-fit: contain;
+    margin-right: 9%;
+    border-radius: 70px;
+}
   #Home .intro h2 {
     font-size: 30px;
   }
@@ -589,7 +612,6 @@ span {
   }
   .certification img {
     height: 30px;
-    margin-right: 8px;
   }
   .certification span {
     font-size: 10px;
